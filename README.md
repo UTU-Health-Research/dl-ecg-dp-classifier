@@ -9,4 +9,6 @@ Note: the training predictions & logs are saved on weight&bias platform, so you 
 # Code implemenation for the Transformer model can be found at this githup repo 
   https://github.com/UTU-Health-Research/dl-ecg-classifier/tree/transformer_network
 
-to implement the transformer with differential privacy we created a new file under src/models/ctn.dp 
+to implement the transformer with differential privacy we created a new file under src/modeling/models/ctn_dp.py and src/models/train_utils_dp.py and for evaluation  src/models/predict_utils.py
+
+  

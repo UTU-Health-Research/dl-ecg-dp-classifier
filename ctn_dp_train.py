@@ -33,10 +33,10 @@ for seed in range(11, 12):
 
     #feature_root = os.path.join(os.getcwd(), 'data', 'features', args.feature_path)
     csv_root = os.path.join(os.getcwd(), 'data', 'split_csvs', args.csv_path)
-    args.train_path = '/home/zoorab/projects/12-lead-ecg-classifier/tansformer/data/clean_cpsc_sph_chapman_ptb.csv'
+    args.train_path = '..../data/clean_cpsc_sph_chapman_ptb.csv'
     args.val_path =  None
     # Add test path for evaluation
-    args.test_path = '/home/zoorab/projects/12-lead-ecg-classifier/tansformer/data/clean_all_g12ec.csv'
+    args.test_path = '...r/tansformer/data/clean_all_g12ec.csv'
 
     args.model_save_dir = os.path.join(os.getcwd(), 'experiments', args.yaml_file_name)
     args.roc_save_dir = os.path.join(args.model_save_dir, 'ROC_curves')
@@ -108,4 +108,4 @@ for seed in range(11, 12):
     args.logger.info(f'Memory cleanup complete for seed {seed}.')
 
 
-#/home/zoorab/projects/12-lead-ecg-classifier/data/processed_data/SPH/SPH20976_preprocessed.h5
+ 

@@ -4,7 +4,7 @@ import numpy as np
 import torch
 import random
 import logging
-from src.modeling.predict_utils import Predicting
+from src.modeling.predict_utils_dp import Predicting
 
 # Set seed for reproducibility
 seed = 123
@@ -30,7 +30,7 @@ args.yaml_file_name = 'manual_config'  # Base name for output directory and logs
 
 # Construct derived paths
 csv_root = os.path.join(os.getcwd(), 'data', 'split_csvs', args.csv_path)
-args.test_path = '/home/zoorab/projects/12-lead-ecg-classifier/data/split_csvs/G12EC/clean_all_g12ec.csv'
+args.test_path = '.../data/split_csvs/G12EC/clean_all_g12ec.csv'
 args.output_dir = os.path.join(os.getcwd(), 'experiments', args.yaml_file_name)
 
 # Locate the trained model
